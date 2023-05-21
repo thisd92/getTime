@@ -15,11 +15,11 @@
     font-size: 18px;
 }
 
-body{
+body {
     background-color: #6495ed;
 }
 
-.title{
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@ body{
     font-family: 'Bungee Inline', cursive;
 }
 
-h1{
+h1 {
     font-size: 5em;
     text-align: center;
     color: #fff;
@@ -65,7 +65,7 @@ h1{
     border-radius: 7px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -75,18 +75,73 @@ footer{
     position: fixed;
     bottom: 0;
     border-top: 1px solid black;
-  }
-  
-  .logo img{
+}
+
+.logo img {
     width: 80px;
-  }
-  
-  .container-social{
+}
+
+.container-social {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .container-social a{
+}
+
+.container-social a {
     padding: 3px;
-  }
+}
+
+@media(max-width: 900px) {
+
+    h1{
+        font-size: 2.2em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 4em;        
+    }
+
+    .dots {
+        font-size: 2em;
+    }
+
+    .time{
+        display: block;
+        padding: 7px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+
+    h1{
+        font-size: 2.2em;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 2em;        
+    }
+
+    .dots {
+        font-size: 1em;
+    }
+
+    .time{
+        display: block;
+        padding: 5px;
+        width: 30%;
+    }
+}

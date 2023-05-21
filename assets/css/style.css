@@ -19,11 +19,14 @@ body {
     background-color: #6495ed;
 }
 
-.title {
+main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+}
+
+.title {
+    margin-top: 80px;
     height: 250px;
     font-family: 'Bungee Inline', cursive;
 }
@@ -37,7 +40,6 @@ h1 {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     font-family: 'Black Ops One', cursive;
 }
@@ -93,25 +95,29 @@ footer {
 
 @media(max-width: 900px) {
 
-    h1{
-        font-size: 2.2em;
+    .title{
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 3em;
     }
 
     .container {
-        width: 100%;
+        width: 60%;
     }
 
     #horas,
     #minutos,
     #segundos {
-        font-size: 4em;        
+        font-size: 4em;
     }
 
     .dots {
         font-size: 2em;
     }
 
-    .time{
+    .time {
         display: block;
         padding: 7px;
         width: 100%;
@@ -120,28 +126,53 @@ footer {
 
 @media(max-width: 400px) {
 
-    h1{
-        font-size: 2.2em;
+    .title {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 2.5em;
     }
 
     .container {
         width: 100%;
-        flex-direction: column;
+        justify-content: center;
     }
 
     #horas,
     #minutos,
     #segundos {
-        font-size: 2em;        
+        font-size: 2em;
     }
 
     .dots {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
-    .time{
-        display: block;
+    .time {
         padding: 5px;
-        width: 30%;
+        width: 25%;
     }
+}
+
+@media(max-width: 280px) {
+
+    .title {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 1.6em;
+    }
+
+    .dots {
+        font-size: 1.2em;
+    }
+
 }

@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Wallpoet&display=swap');
+@font-face {
+    font-family: "Bungee Inline";
+    src: url('../fonts/BungeeInline-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Black Ops One";
+    src: url('../fonts/BlackOpsOne-Regular.ttf');
+}
 
 * {
     box-sizing: border-box;
@@ -21,7 +25,7 @@ body{
     justify-content: center;
     margin-top: 100px;
     height: 250px;
-    font-family: 'Mogra', cursive;
+    font-family: 'Bungee Inline', cursive;
 }
 
 h1{
@@ -35,12 +39,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* font-family: 'Righteous', cursive; */
-    /* font-family: 'Chakra Petch', sans-serif; */
-    font-family: 'Orbitron', sans-serif;
-    /* font-family: 'Black Ops One', cursive; */
-    /* font-family: 'Wallpoet', cursive; */
-
+    font-family: 'Black Ops One', cursive;
 }
 
 .dots {
